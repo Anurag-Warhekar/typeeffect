@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #212121;
+  }
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content:space-around;
+}
+
+.txt{
+
+  text-transform: capitalize;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  color: #E6E6E6;
+  animation: blink 0.9s step-end infinite, writerr 7s linear infinite;
+
+
+}
+#scnd{
+  animation:writerr 7s steps(18) infinite,blink 0.9s step-end infinite;
+}
+
+/* this is to animate blink */
+@keyframes blink {
+  0%,100%{
+    border-color: transparent;
+}
+
+  50%{
+      border-right: 2px solid white ;}
+    }
+
+
+
+/*this is for writting effect like type writter   */
+@keyframes writerr {
+0%{
+  width: 0ch;
+}
+50%{
+  width: 18ch;
+}
+
+65%{
+  width: 18ch;
+}
+
+90%{
+  width: 0ch;
+}
+100%{
+  width: 0ch;
+}
+}
+
+
+.inpt{
+width: 90%;
+text-align: center;
+}
+
+.inpt input {
+width: 50%;
+height: 50px;
+border-radius: 3px;
+font-size: 20px;
+padding: 3px 9px;
+background-color: #FCFCFC;
+}
+
+
+
+.inpt button{
+  color: white;
+  font-size: 18px;
+
+
+border-radius: 4px;
+  letter-spacing: 0.5px;
+  padding: 16px 40px;
+  margin: 16px 0;
+  background-color: #7C5CEA;
+}
+
+.inpt button:hover{
+  box-shadow: 0px 4px 10px 0px #000000;
+cursor: pointer;
+}
+
+
+.note{
+  position: fixed;
+  letter-spacing: 5px;
+  color: #f1f1f1;
+  left: -18%;
+  top: 47%;
+  transform: rotateZ(-90deg);
+
+}
